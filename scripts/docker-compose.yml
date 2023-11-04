@@ -1,0 +1,26 @@
+# docker-compose.yml
+version: '3'
+services:
+  morphling:
+    image: postgres:latest
+    container_name: morphling
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_DB: datamorph
+      POSTGRES_USER: thor
+      POSTGRES_PASSWORD: 0000
+    volumes:
+      - /Users/devtosun/psql:/var/lib/postgresql/data
+
+
+# docker-compose up -d          //yml dosyasini ayaga kaldir, -d calisir duruma getirir
+
+# docker stop morphling         //container durdur
+# docker start morphling        //contanier calistir
+
+# docker ps                     //calisan container'lari gor
+# docker ps -a                  //butun container'lari gor
+# docker rm -f morphling        //container'i sil
+
+# docker exec -it morphling bash  //container'a baglan
