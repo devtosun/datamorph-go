@@ -1,13 +1,14 @@
 package database
 
 import (
-    "fmt"
-    "log"
-    "strconv"
+	"fmt"
+	"log"
+	"strconv"
 
-    "github.com/devtosun/datamorph-go/config"
-    "gorm.io/driver/postgres"
-    "gorm.io/gorm"
+	"gorm.io/driver/postgres"
+	"gorm.io/gorm"
+
+	"github.com/devtosun/datamorph-go/config"
 )
 
 // Declare the variable for the database
@@ -34,3 +35,4 @@ func ConnectDB() {
 
     fmt.Println("Connection Opened to Database")
 }
+

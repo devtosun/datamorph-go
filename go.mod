@@ -27,6 +27,7 @@ require (
 	github.com/fatih/color v1.15.0 // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
 	github.com/gohugoio/hugo v0.120.2 // indirect
+	github.com/golang-jwt/jwt/v5 v5.1.0
 	github.com/google/uuid v1.3.1 // indirect
 	github.com/joho/godotenv v1.5.1
 	github.com/klauspost/compress v1.16.7 // indirect
